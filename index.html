@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Burger Broker</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
+<link rel="stylesheet" href="./styles/style.css">
+
+</head>
+<body>
+  <!-- Navbar
+-->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+        <div class="container-fluid">
+           <div class="container-fluid">
+          <a class="navbar-brand" href="#">Burger Broker <i class="bi bi-wallet2"></i></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home <i class="bi bi-house"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" target="_blank" href="https://github.com/jaxn-harvey">GitHub <i class="bi bi-github"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" target="_blank" href="https://github.com/jaxn-harvey/dev-harry-final-project">This Repo <i class="bi bi-git"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" target="_blank" href="https://validator.nu/?doc=https%3A%2F%2Fjaxn-harvey.github.io%2Fdev-harry-final-project%2F">Nu Validator <i class="bi bi-check"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        </div>
+      </nav>
+
+<!------>
+<form>
+
+<h1 class="col-md-4 offset-md-3">Order Form <i class="bi bi-file-earmark"></i></h1>
+
+<div class="col-md-6 card offset-md-3">
+
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="janedoe" aria-label="janedoe" aria-describedby="basic-addon2" id="inputUserName">
+  <span class="input-group-text" id="field" name="field">@una.edu</span>
+</div>
+<!--
+----------->
+   
+  <input class="btn btn-primary bg-dark col-md-4 offset-md-4" type="submit" value="Load previous order" id="loadPrevious">
+  
+  <div class="lastOrder">
+    
+  </div>
+  
+  <h5>Base</h5>
+  
+<div class="form-check base" id="">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="hamburger" checked>
+  <label class="form-check-label" for="flexRadioDefault1">
+    Hamburger
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="chicken">
+  <label class="form-check-label" for="flexRadioDefault2">
+    Chicken Sandwich
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="veggie">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Veggie Burger
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="mysteryb">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Mystery Burger
+  </label>
+</div>
+  
+    <h5>Bun</h5> 
+<div class="form-check" id="">
+  <input class="form-check-input" type="radio" name="flexRadioDefault3" id="brioche" checked>
+  <label class="form-check-label" for="flexRadioDefault3">
+    Brioche
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault3" id="wheat">
+  <label class="form-check-label" for="flexRadioDefault3">
+    Wheat
+  </label>
+</div>
+
+  
+  <!--
+----------->
+  <h5>Toppings</h5>
+  <div class="form-check">
+  <input class="form-check-input lettuce" type="checkbox" value="" id="lettuce" checked>
+  <label class="form-check-label" for="flexCheckDefault" id="lettuce">
+    Lettuce
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="tomato">
+  <label class="form-check-label" for="flexCheckChecked">
+    Tomato
+  </label>
+</div>
+  <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="pickles">
+  <label class="form-check-label" for="flexCheckDefault">
+    Pickles
+  </label>
+</div>
+  <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="peppers">
+  <label class="form-check-label" for="flexCheckDefault">
+    Peppers
+  </label>
+</div>
+  <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="mysterym">
+  <label class="form-check-label" for="flexCheckDefault">
+    Mystery mix
+  </label>
+</div>
+  
+    <h5>Condiments</h5>
+  <div class="form-check">
+  <input class="form-check-input condiments" type="checkbox" value="" id="ketchup" checked>
+  <label class="form-check-label" for="flexCheckDefault">
+    Ketchup
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="hotsauce">
+  <label class="form-check-label" for="flexCheckChecked">
+    Hot sauce
+  </label>
+</div>
+  <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="mayo">
+  <label class="form-check-label" for="flexCheckDefault">
+    Mayo
+  </label>
+</div>
+  <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="mustard">
+  <label class="form-check-label" for="flexCheckDefault">
+    Mustard
+  </label>
+</div>
+  <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="housesauce">
+  <label class="form-check-label" for="flexCheckDefault">
+    House sauce
+  </label>
+</div>
+  
+  <h5>Would you like a side?</h5>
+  <div class="form-check sideRadio">
+  <input class="form-check-input" type="radio" name="flexRadioDefault2" id="yesSide" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+    Yes
+  </label>
+</div>
+<div class="form-check sideRadio">
+  <input class="form-check-input" type="radio" name="flexRadioDefault2" id="noSide">
+  <label class="form-check-label" for="flexRadioDefault1">
+    No
+  </label>
+</div>
+ <div id="chooseSide">
+   <h5>Choose a side</h5>
+  <select class="form-select" aria-label="None selected">
+  <option selected id="none">None selected</option>
+  <option id="chips">Potato chips</option>
+  <option value="1" id="fries">French fries</option>
+  <option value="2" id="slaw">Coleslaw</option>
+  <option value="3" id="salad">Salad</option>
+  <option value="3" id="hummus">Hummus</option>
+  <option value="3" id="hash">Mystery hash</option>
+</select>
+  </div>
+  
+  <div class="mb-3">
+    <h5>Do you have food allergies? Please list them below.</h5>
+  <textarea class="form-control" id="usertext" rows="3"></textarea>
+</div>
+  
+  <input class="btn btn-primary bg-dark" type="submit" value="Submit" id="btnSubmit">
+  
+</div>
+  
+  <div class="col-md-6 card offset-md-3 tally">
+    <h5>Order Summary</h5>
+    <p class="orderList" id="orderList"></p>
+  </div>
+  
+</form>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.0/jquery-ui.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js'></script>
+  <script  src="./scripts/script.js"></script>
+</body>
+
+<footer class="py-3 my-4 bg-dark">
+  <p class="text-center text-muted">Jackson Harvey &copy; 2024</p>
+</footer>
